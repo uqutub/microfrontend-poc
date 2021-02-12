@@ -1,0 +1,18 @@
+.navbar{
+    background-color: #eee;
+    color: #555;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 15px;
+}
+.navbar .logo a{
+    color: #555;
+    text-decoration: none;
+}
+.navbar .auth-links a{
+    color: #555;
+    text-decoration: none;
+    margin-left: 10px;
+}
