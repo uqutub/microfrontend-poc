@@ -9,7 +9,13 @@ var _react = require("react");
 
 var _reactRouterDom = require("react-router-dom");
 
+var _mikaelsTalentadore = _interopRequireDefault(require("@bit/mikaels.talentadore.datatables"));
+
+require("./login.css");
+
 var _jsxRuntime = require("react/jsx-runtime");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -42,6 +48,15 @@ var Login = function Login(_ref) {
       creadentials = _useState2[0],
       setCreadentials = _useState2[1];
 
+  var _useState3 = (0, _react.useState)([{
+    first: 'innpt first from login',
+    last: 'laaaassssst',
+    email: 'emememememail login'
+  }]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      dt = _useState4[0],
+      setDt = _useState4[1];
+
   (0, _react.useEffect)(function () {
     isLoggedin && history.push("/dashboard");
   }, [isLoggedin]);
@@ -55,9 +70,35 @@ var Login = function Login(_ref) {
     return setCreadentials(_objectSpread(_objectSpread({}, creadentials), {}, _defineProperty({}, e.target.name, e.target.value)));
   };
 
+  var changeDatatable = function changeDatatable() {
+    return setDt([{
+      first: 'innpt first from login',
+      last: 'laaaassssst',
+      email: 'emememememail login'
+    }, {
+      first: 'innpt first from login',
+      last: 'laaaassssst',
+      email: 'emememememail login'
+    }, {
+      first: 'innpt first from login',
+      last: 'laaaassssst',
+      email: 'emememememail login'
+    }, {
+      first: 'innpt first from login',
+      last: 'laaaassssst',
+      email: 'emememememail login'
+    }, {
+      first: 'innpt first from login',
+      last: 'laaaassssst',
+      email: 'emememememail login'
+    }]);
+  };
+
   return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     className: "login-box",
-    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h1", {
+      children: "Login Application on React"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
       children: "Username"
     }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
       type: "text",
@@ -74,6 +115,49 @@ var Login = function Login(_ref) {
     }), /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {}), /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {}), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
       onClick: onSubmit,
       children: "Login"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("hr", {}), /*#__PURE__*/(0, _jsxRuntime.jsx)(_mikaelsTalentadore.default, {
+      datatable: dt
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+      onClick: changeDatatable,
+      children: "Change data via props"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("hr", {}), /*#__PURE__*/(0, _jsxRuntime.jsx)("h1", {
+      children: "Using Bootstrap Form"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      class: "input-group input-group-lg",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+        class: "input-group-addon",
+        id: "sizing-addon1",
+        children: "@"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+        type: "text",
+        class: "form-control",
+        placeholder: "Username",
+        "aria-describedby": "sizing-addon1"
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      class: "input-group",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+        class: "input-group-addon",
+        id: "sizing-addon2",
+        children: "@"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+        type: "text",
+        class: "form-control",
+        placeholder: "Username",
+        "aria-describedby": "sizing-addon2"
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      class: "input-group input-group-sm",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+        class: "input-group-addon",
+        id: "sizing-addon3",
+        children: "@"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+        type: "text",
+        class: "form-control",
+        placeholder: "Username",
+        "aria-describedby": "sizing-addon3"
+      })]
     })]
   });
 };

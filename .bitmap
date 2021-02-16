@@ -14,6 +14,24 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "mikaels.talentadore/datatables@0.0.1": {
+        "files": [
+            {
+                "relativePath": "Apps/datatables/src/datatables/index.css",
+                "test": false,
+                "name": "index.css"
+            },
+            {
+                "relativePath": "Apps/datatables/src/datatables/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "Apps/datatables/src/datatables/index.js",
+        "trackDir": "Apps/datatables/src/datatables",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "mikaels.talentadore/home@0.0.1": {
         "files": [
             {
@@ -27,12 +45,17 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "mikaels.talentadore/login@0.0.11": {
+    "mikaels.talentadore/login@0.0.18": {
         "files": [
             {
                 "relativePath": "src/Apps/auth/src/Pages/Login/index.js",
                 "test": false,
                 "name": "index.js"
+            },
+            {
+                "relativePath": "src/Apps/auth/src/Pages/Login/login.css",
+                "test": false,
+                "name": "login.css"
             }
         ],
         "mainFile": "src/Apps/auth/src/Pages/Login/index.js",

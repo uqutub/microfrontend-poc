@@ -1,13 +1,16 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './datatables';
 import reportWebVitals from './reportWebVitals';
+
+const defaultProps = {
+  datatable: [{first: 'forst', last: 'lastt', email: 'emailllll'}]
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App {...defaultProps}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
